@@ -1,0 +1,85 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+  margin: 0; 
+}
+
+/* Header styling */
+header {
+  background-color: rgb(189, 146, 89); 
+  padding: 10px;
+  text-align: center;
+  font-size: 35px; 
+  color: rgb(31, 17, 17);
+}
+
+
+header img {
+  width: 100%; 
+  max-width: 2500px; 
+  height: auto; 
+}
+
+/* Styling navigasi */
+nav {
+  float: left;
+  width: 30%;
+  background: rgb(135, 67, 0) ;
+  padding: 20px;
+  box-sizing: border-box; 
+}
+
+/* Styling daftar di navigasi */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a{
+  color: rgb(255, 215, 147);
+  text-decoration: none;
+}
+
+/* Selector untuk tautan yang sudah diklik */
+a:visited {
+  color: rgb(246, 245, 245);
+}
+
+/* selector untuk tautan saat dihover (ketika kursor berada diatasnya) */
+a:hover {
+  color: rgb(114, 59, 0);
+  text-decoration: none;
+}
+
+/* Styling artikel */
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: burlywood;
+  box-sizing: border-box; 
+}
+
+/* Menghapus float pada section untuk mengatur layout */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Styling footer */
+footer {
+  background-color: #6f4400;
+  padding: 10px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin-top: auto; 
+}
